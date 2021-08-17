@@ -66,4 +66,12 @@ restbutton.addEventListener('click', resetBoard);
 
 sizebutton.addEventListener('click', changeSize);
 
-randbutton.addEventListener('click',()=>rainbowMode= !rainbowMode)
+randbutton.addEventListener('click',function () {
+    rainbowMode=!rainbowMode;
+    if(rainbowMode){
+        randbutton.textContent="Press to turn off rainbow mode";
+    }
+    else{
+        randbutton.textContent="Press to activate rainbow mode";
+    }
+});
